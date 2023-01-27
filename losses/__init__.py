@@ -6,6 +6,8 @@ from .Binomial import BinomialLoss
 from .LiftedStructure import LiftedStructureLoss
 # from .Weight import WeightLoss
 from .HardMining import HardMiningLoss
+from .SemiHard import SemiHardLoss
+
 
 __factory = {
     'NCA': NCALoss,
@@ -14,6 +16,7 @@ __factory = {
     'LiftedStructure': LiftedStructureLoss,
     # 'Weight': WeightLoss,
     'HardMining': HardMiningLoss,
+    'SemiHard': SemiHardLoss
 }
 
 
