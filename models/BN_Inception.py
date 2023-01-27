@@ -522,7 +522,7 @@ def BN_Inception(dim=512, pretrained=False, model_path=' '):
     return model
 
 def main():
-    model = BN_Inception(dim=512, pretrained=True)
+    model = BN_Inception(dim=512, pretrained=False)
     # print(model)
     images = Variable(torch.ones(8, 3, 227, 227))
     out_ = model(images)
