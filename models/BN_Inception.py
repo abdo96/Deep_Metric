@@ -509,7 +509,7 @@ class BNInception(nn.Module):
 
 
 
-def BN_Inception(dim=512, pretrained=True, model_path=None):
+def BN_Inception(dim=512, pretrained=False, model_path=' '):
     model = BNInception(dim=512)
     if model_path is None:
         model_path = '/home/xunwang/.torch/models/bn_inception-52deb4733.pth'
